@@ -64,3 +64,25 @@ Task.catch(function(rej){
     console.log(rej);
 });  
 
+
+let pro = new Promise(function(res,rej){
+
+    let data = true;
+    setTimeout(()=>{
+        if(data){
+         res("forget")
+        }else{
+            rej("Not forget")
+        }
+    },2000)
+})
+
+pro.then(function(res){
+    console.log(res);
+})
+
+pro.catch(function(rej){
+    console.log(rej);
+})
+
+
