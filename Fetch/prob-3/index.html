@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #loader {
+        text-align: center;
+        margin-top: 100px;
+      }
+      #main{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+        gap: 20px;
+      }
+      #main img{
+        width: 350px;
+        height: 400px;
+        padding: 20px;
+      }
+      #main div{
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border-radius: 20px;
+      }
+      </style>
+</head>
+<body>
+    <h1>Product data</h1>
+
+
+    <div id="main"></div>
+    
+    <div id="loader" >
+        <img src="https://miro.medium.com/1*9EBHIOzhE1XfMYoKz1JcsQ.gif" alt="">
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
